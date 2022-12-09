@@ -1,0 +1,5 @@
+---
+:verbose: false
+:timeout: 25
+:queues:
+  - default

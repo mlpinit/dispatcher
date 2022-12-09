@@ -1,0 +1,20 @@
+default: &default
+  adapter: postgresql
+  encoding: unicode
+  pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
+  timeout: 5000
+  port: 5432
+  passowrd: Rails.application.credentials.dispatcher_database_username
+  passowrd: Rails.application.credentials.dispatcher_database_password
+
+development:
+  <<: *default
+  database: dispatcher_development
+
+test:
+  <<: *default
+  database: dispatcher_test
+
+production:
+  <<: *default
+  database: dispatcher_production

@@ -1,0 +1,41 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://mock-text-provider.parentsquare.com/provider2
+    body:
+      encoding: UTF-8
+      string: '{"to_number":"1234567777","message":"Hello World","callback_url":"http://example.com/messages/delivery_status"}'
+    headers:
+      Content-Type:
+      - application/json
+      User-Agent:
+      - Faraday v2.7.1
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Sat, 10 Dec 2022 21:23:29 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '53'
+      Connection:
+      - keep-alive
+      X-Amzn-Requestid:
+      - 33fed5b4-7524-4a9d-97b0-367a837af377
+      X-Amz-Apigw-Id:
+      - c8vQzGRlPHcFjFw=
+      X-Amzn-Trace-Id:
+      - Root=1-6394f8d1-793cbea657789b326ac4d398;Sampled=0
+    body:
+      encoding: UTF-8
+      string: '{"message_id":"b7871749-bbd3-4cc5-95b9-182a88857a20"}'
+  recorded_at: Sat, 10 Dec 2022 21:23:29 GMT
+recorded_with: VCR 6.1.0
