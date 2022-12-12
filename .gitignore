@@ -32,6 +32,8 @@
 /public/assets
 
 # Ignore keys for decrypting credentials
-/config/credentials/production.key
-/config/credentials/development.key
-/config/credentials/test.key
+#
+# Normally ignored, but not for the purpose of this assignment
+#/config/credentials/production.key
+#/config/credentials/development.key
+#/config/credentials/test.key
